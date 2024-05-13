@@ -39,7 +39,10 @@
         "vite-plugin-node-polyfills",
         "vitest",
         "@types/node",
-        "yarn"
+        "@types/jest",
+        "yarn",
+        "ts-node",
+        "ts-jest"
       ]
     },
     {
