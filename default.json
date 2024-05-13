@@ -48,7 +48,7 @@
     },
     {
       "groupName": "Backend-Specific",
-      "matchDepNames": ["octokit", "dotenv", "jsonc-parser"]
+      "matchDepNames": ["octokit", "dotenv", "jsonc-parser", "bson"]
     },
     {
       "groupName": "Major Locked Deps",
