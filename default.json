@@ -43,7 +43,8 @@
         "@types/node-fetch",
         "yarn",
         "ts-node",
-        "ts-jest"
+        "ts-jest",
+        "rimraf"
       ]
     },
     {
