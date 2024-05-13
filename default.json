@@ -40,10 +40,26 @@
         "vitest",
         "@types/node",
         "@types/jest",
+        "@types/node-fetch",
         "yarn",
         "ts-node",
         "ts-jest"
       ]
+    },
+    {
+      "groupName": "Backend-Specific",
+      "matchDepNames": ["octokit", "dotenv", "jsonc-parser"]
+    },
+    {
+      "groupName": "Major Locked Deps",
+      "matchDepNames": ["node-fetch"],
+      "matchUpdateTypes": ["patch", "minor"]
+    },
+    {
+      "groupName": "Major Locked Deps - Disabled",
+      "enabled": false,
+      "matchDepNames": ["node-fetch"],
+      "matchUpdateTypes": ["major"]
     },
     {
       "groupName": "Resolutions Dependencies Disabled",
