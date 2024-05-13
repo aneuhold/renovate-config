@@ -23,21 +23,17 @@
         "^prettier.*",
         "^@typescript-eslint.*"
       ],
-      "matchPackageNames": ["typescript-eslint"],
+      "matchDepNames": ["typescript-eslint"],
       "automerge": true
     },
     {
       "groupName": "Svelte",
       "matchPackagePatterns": ["^svelte.*", "^@smui.*", "^@sveltejs/.*"],
-      "matchPackageNames": [
-        "svelty-picker",
-        "@fontsource/fira-mono",
-        "smui-theme"
-      ]
+      "matchDepNames": ["svelty-picker", "@fontsource/fira-mono", "smui-theme"]
     },
     {
       "groupName": "Build + Testing",
-      "matchPackageNames": [
+      "matchDepNames": [
         "typescript",
         "vite",
         "vite-plugin-node-polyfills",
