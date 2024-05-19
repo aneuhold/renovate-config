@@ -49,7 +49,7 @@
     },
     {
       "groupName": "Backend-Specific",
-      "matchDepNames": ["octokit", "dotenv", "jsonc-parser", "bson", "mongodb"]
+      "matchDepNames": ["octokit", "dotenv", "jsonc-parser", "mongodb"]
     },
     {
       "groupName": "Major Locked Deps",
@@ -61,6 +61,12 @@
       "enabled": false,
       "matchDepNames": ["node-fetch"],
       "matchUpdateTypes": ["major"]
+    },
+    {
+      "groupName": "Completely Locked Deps",
+      "description": "Updates that are completely locked for one reason or another. See description in README.",
+      "enabled": "false",
+      "matchDepNames": ["bson"]
     },
     {
       "groupName": "Resolutions Dependencies Disabled",
