@@ -49,17 +49,17 @@
     },
     {
       "groupName": "Backend-Specific",
-      "matchDepNames": ["octokit", "dotenv", "jsonc-parser"]
+      "matchDepNames": ["dotenv", "jsonc-parser"]
     },
     {
       "groupName": "Major Locked Deps",
-      "matchDepNames": ["node-fetch"],
+      "matchDepNames": ["node-fetch", "octokit"],
       "matchUpdateTypes": ["patch", "minor"]
     },
     {
       "groupName": "Major Locked Deps - Disabled",
       "enabled": false,
-      "matchDepNames": ["node-fetch"],
+      "matchDepNames": ["node-fetch", "octokit"],
       "matchUpdateTypes": ["major"]
     },
     {
