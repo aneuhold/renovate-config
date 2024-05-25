@@ -19,4 +19,4 @@ Then go to [GitHub settings here](https://github.com/settings/installations/5040
 
 Some dependencies are completely locked at the moment. Descriptions below on why that is the case:
 
-- `bson` to `6.2.0`: This is patched in the frontend via Yarn 4. Patched to fix a bug where bson would use top-level await for seemingly no reason. This breaks safari. Just the awaits were removed from bson.mjs. If this gets fixed, then the lock can be removed.
+- `bson` to `6.2.0`: This is patched in the frontend via Yarn 4. Patched to fix a bug where bson would use top-level await for seemingly no reason. This breaks safari. Just the awaits were removed from bson.mjs. If this gets fixed, then the lock can be removed. See [this PR](https://github.com/WebKit/WebKit/pull/24122) for when this can be unlocked. Once that is merged, the dashboard can be tested with the latest version of bson.
