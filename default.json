@@ -21,6 +21,7 @@
       "groupName": "Formatting and Linting",
       "matchPackagePatterns": [
         "^eslint.*",
+        "@eslint/.*",
         "^prettier.*",
         "^@typescript-eslint.*"
       ],
@@ -30,7 +31,17 @@
     {
       "groupName": "Svelte",
       "matchPackagePatterns": ["^svelte.*", "^@smui.*", "^@sveltejs/.*"],
-      "matchDepNames": ["svelty-picker", "@fontsource/fira-mono", "smui-theme"]
+      "matchDepNames": [
+        "svelty-picker",
+        "@fontsource/fira-mono",
+        "smui-theme",
+        "@sentry/sveltekit"
+      ]
+    },
+    {
+      "groupName": "Storybook",
+      "matchPackagePatterns": ["^@storybook/.*"],
+      "matchDepNames": ["storybook"]
     },
     {
       "groupName": "Build + Testing",
@@ -45,7 +56,8 @@
         "yarn",
         "ts-node",
         "ts-jest",
-        "rimraf"
+        "rimraf",
+        "tslib"
       ]
     },
     {
