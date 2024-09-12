@@ -28,13 +28,15 @@
     },
     {
       "groupName": "Svelte",
-      "matchDepNames": [
+      "matchPackageNames": [
         "svelty-picker",
         "@fontsource/fira-mono",
         "smui-theme",
-        "@sentry/sveltekit"
-      ],
-      "matchPackageNames": ["/^svelte.*/", "/^@smui.*/", "/^@sveltejs/.*/"]
+        "@sentry/sveltekit",
+        "/^svelte.*/",
+        "/^@smui.*/",
+        "/^@sveltejs/.*/"
+      ]
     },
     {
       "groupName": "Storybook",
