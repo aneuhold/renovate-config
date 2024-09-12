@@ -17,9 +17,9 @@
     },
     {
       "groupName": "Formatting and Linting",
-      "matchDepNames": ["typescript-eslint"],
       "automerge": true,
       "matchPackageNames": [
+        "typescript-eslint",
         "/^eslint.*/",
         "/@eslint/.*/",
         "/^prettier.*/",
@@ -40,12 +40,11 @@
     },
     {
       "groupName": "Storybook",
-      "matchDepNames": ["storybook"],
-      "matchPackageNames": ["/^@storybook/.*/"]
+      "matchPackageNames": ["storybook", "/^@storybook/.*/"]
     },
     {
       "groupName": "Build + Testing",
-      "matchDepNames": [
+      "matchPackageNames": [
         "typescript",
         "vite",
         "vite-plugin-node-polyfills",
@@ -62,24 +61,24 @@
     },
     {
       "groupName": "Backend-Specific",
-      "matchDepNames": ["dotenv", "jsonc-parser"]
+      "matchPackageNames": ["dotenv", "jsonc-parser"]
     },
     {
       "groupName": "Major Locked Deps",
-      "matchDepNames": ["node-fetch", "octokit"],
+      "matchPackageNames": ["node-fetch", "octokit"],
       "matchUpdateTypes": ["patch", "minor"]
     },
     {
       "groupName": "Major Locked Deps - Disabled",
       "enabled": false,
-      "matchDepNames": ["node-fetch", "octokit"],
+      "matchPackageNames": ["node-fetch", "octokit"],
       "matchUpdateTypes": ["major"]
     },
     {
       "groupName": "Completely Locked Deps",
       "description": "Updates that are completely locked for one reason or another. See description in README.",
       "enabled": false,
-      "matchDepNames": ["bson", "mongodb"]
+      "matchPackageNames": ["bson", "mongodb"]
     },
     {
       "groupName": "Resolutions Dependencies Disabled",
