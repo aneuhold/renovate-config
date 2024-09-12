@@ -19,4 +19,4 @@ jobs:
           node-version: 20
 
       - name: Run Validation
-        run: npx --yes --package renovate -- renovate-config-validator --strict
+        run: npx --yes --package renovate -- renovate-config-validator --strict default.json tslib.json
