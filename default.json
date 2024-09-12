@@ -4,44 +4,42 @@
   "timezone": "America/Los_Angeles",
   "prConcurrentLimit": 8,
   "assigneesFromCodeOwners": true,
-  "lockFileMaintenance": {
-    "enabled": false
-  },
+  "lockFileMaintenance": { "enabled": false },
   "rangeStrategy": "bump",
   "separateMajorMinor": false,
   "schedule": ["every weekend"],
   "packageRules": [
     {
       "groupName": "Personal Libraries",
-      "matchPackagePatterns": ["^@aneuhold/.*"],
       "schedule": ["every weekday"],
-      "automerge": true
+      "automerge": true,
+      "matchPackageNames": ["/^@aneuhold/.*/"]
     },
     {
       "groupName": "Formatting and Linting",
-      "matchPackagePatterns": [
-        "^eslint.*",
-        "@eslint/.*",
-        "^prettier.*",
-        "^@typescript-eslint.*"
-      ],
       "matchDepNames": ["typescript-eslint"],
-      "automerge": true
+      "automerge": true,
+      "matchPackageNames": [
+        "/^eslint.*/",
+        "/@eslint/.*/",
+        "/^prettier.*/",
+        "/^@typescript-eslint.*/"
+      ]
     },
     {
       "groupName": "Svelte",
-      "matchPackagePatterns": ["^svelte.*", "^@smui.*", "^@sveltejs/.*"],
       "matchDepNames": [
         "svelty-picker",
         "@fontsource/fira-mono",
         "smui-theme",
         "@sentry/sveltekit"
-      ]
+      ],
+      "matchPackageNames": ["/^svelte.*/", "/^@smui.*/", "/^@sveltejs/.*/"]
     },
     {
       "groupName": "Storybook",
-      "matchPackagePatterns": ["^@storybook/.*"],
-      "matchDepNames": ["storybook"]
+      "matchDepNames": ["storybook"],
+      "matchPackageNames": ["/^@storybook/.*/"]
     },
     {
       "groupName": "Build + Testing",
@@ -78,16 +76,16 @@
     {
       "groupName": "Completely Locked Deps",
       "description": "Updates that are completely locked for one reason or another. See description in README.",
-      "enabled": "false",
+      "enabled": false,
       "matchDepNames": ["bson", "mongodb"]
     },
     {
       "groupName": "Resolutions Dependencies Disabled",
       "description": "Disable updates to resolutions because resolutions are typically set to get around a specific issue",
       "enabled": false,
-      "matchPackagePatterns": [".*"],
       "matchDepTypes": ["resolutions"],
-      "automerge": false
+      "automerge": false,
+      "matchPackageNames": ["/.*/"]
     }
   ]
 }
