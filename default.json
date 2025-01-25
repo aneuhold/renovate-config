@@ -57,7 +57,9 @@
         "ts-node",
         "ts-jest",
         "rimraf",
-        "tslib"
+        "tslib",
+        "tsx",
+        "jsr"
       ]
     },
     {
