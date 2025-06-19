@@ -10,26 +10,9 @@
   "schedule": ["every weekend"],
   "packageRules": [
     {
-      "groupName": "Other Dependencies",
+      "groupName": "All Dependencies",
       "description": "All dependencies that are not grouped elsewhere",
       "matchPackageNames": ["/.*/"]
-    },
-    {
-      "groupName": "Personal Libraries",
-      "schedule": ["every weekday"],
-      "automerge": true,
-      "matchPackageNames": ["/^@aneuhold/.*/"]
-    },
-    {
-      "groupName": "Formatting and Linting",
-      "automerge": true,
-      "matchPackageNames": [
-        "typescript-eslint",
-        "/^eslint.*/",
-        "/@eslint/.*/",
-        "/^prettier.*/",
-        "/^@typescript-eslint.*/"
-      ]
     },
     {
       "groupName": "Svelte",
@@ -41,30 +24,6 @@
         "/^svelte.*/",
         "/^@smui.*/",
         "/^@sveltejs/.*/"
-      ]
-    },
-    {
-      "groupName": "Build + Testing",
-      "automerge": true,
-      "matchPackageNames": [
-        "typescript",
-        "vite",
-        "vite-plugin-node-polyfills",
-        "vitest",
-        "@types/node",
-        "@types/jest",
-        "@types/node-fetch",
-        "yarn",
-        "ts-node",
-        "ts-jest",
-        "rimraf",
-        "tslib",
-        "tsx",
-        "jsr",
-        "storybook",
-        "/^@storybook/.*/",
-        "dotenv",
-        "jsonc-parser"
       ]
     },
     {
