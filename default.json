@@ -10,6 +10,11 @@
   "schedule": ["every weekend"],
   "packageRules": [
     {
+      "groupName": "Other Dependencies",
+      "description": "All dependencies that are not grouped elsewhere",
+      "matchPackageNames": ["/.*/"]
+    },
+    {
       "groupName": "Personal Libraries",
       "schedule": ["every weekday"],
       "automerge": true,
@@ -39,10 +44,6 @@
       ]
     },
     {
-      "groupName": "Storybook",
-      "matchPackageNames": ["storybook", "/^@storybook/.*/"]
-    },
-    {
       "groupName": "Build + Testing",
       "automerge": true,
       "matchPackageNames": [
@@ -59,12 +60,12 @@
         "rimraf",
         "tslib",
         "tsx",
-        "jsr"
+        "jsr",
+        "storybook",
+        "/^@storybook/.*/",
+        "dotenv",
+        "jsonc-parser"
       ]
-    },
-    {
-      "groupName": "Backend-Specific",
-      "matchPackageNames": ["dotenv", "jsonc-parser"]
     },
     {
       "groupName": "Major Locked Deps",
