@@ -34,7 +34,7 @@
     {
       "groupName": "Major Locked Deps - Disabled",
       "enabled": false,
-      "matchPackageNames": ["node-fetch", "octokit"],
+      "matchPackageNames": ["node-fetch", "octokit", "node"],
       "matchUpdateTypes": ["major"]
     },
     {
