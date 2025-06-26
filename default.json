@@ -7,7 +7,7 @@
   "lockFileMaintenance": { "enabled": false },
   "rangeStrategy": "bump",
   "separateMajorMinor": false,
-  "schedule": ["weekdays"],
+  "schedule": ["weekday"],
   "packageRules": [
     {
       "groupName": "All Dependencies",
