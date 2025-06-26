@@ -7,7 +7,6 @@
   "lockFileMaintenance": { "enabled": false },
   "rangeStrategy": "bump",
   "separateMajorMinor": false,
-  // Every monday and tuesday
   "schedule": ["* * * * 1,2"],
   "packageRules": [
     {
