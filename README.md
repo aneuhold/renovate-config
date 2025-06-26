@@ -27,3 +27,7 @@ Some dependencies are major-version locked. Mainly due to ESM. All personal libr
 
 - `node-fetch`
 - `octokit`
+
+## Schedule
+
+The schedule is currently setup as `"schedule": ["* * * * 1,2"]` which means every Monday and Tuesday. Those seemed like good days at the time.
